@@ -6,6 +6,24 @@ An open, curated catalogue of **100 of the most famous open problems in mathemat
 
 ---
 
+## ⚡ Featured: a problem on this list just fell (July 2026)
+
+The inspiration for this repo: on **19–20 July 2026**, mathematician **Levent Alpöge** announced an explicit **counterexample to the Jacobian Conjecture** (#81, open since 1939), *constructed with the help of Anthropic's Claude Fable 5*. Rather than proving the conjecture, the approach **built a counterexample** — a polynomial map `ℂ³ → ℂ³` with constant Jacobian determinant `−2` that is nevertheless **not injective**.
+
+The map (verified in this repo):
+```
+a = (1 + xy)³·z + y²(1 + xy)(4 + 3xy)
+b = y + 3x(1 + xy)²·z + 3xy²(4 + 3xy)
+c = 2x − 3x²y − x³z
+```
+Its Jacobian determinant is the constant `−2`, yet the three distinct points `(0,0,−¼)`, `(1,−3⁄2,13⁄2)`, `(−1,3⁄2,13⁄2)` all map to `(−¼,0,0)`. That kills injectivity → the conjecture is **false for n > 2** (and, by padding with identity coordinates, in every dimension ≥ 3). The **n = 2 case is still open**.
+
+Because the counterexample is a concrete algebraic object, **anyone can verify it** — no need to trust the AI. Full story, references, and a verification script: **[problems/081-jacobian-conjecture.md](problems/081-jacobian-conjecture.md)**.
+
+> *This is exactly the spirit of the project: not "trust me, I solved it," but "here is a checkable object — verify it yourself."*
+
+---
+
 ## What this is (and isn't)
 
 **This is:**
@@ -122,7 +140,7 @@ Please read this before contributing a "solution":
 
 ### Algebra, Groups & Rings
 80. **Kaplansky's Zero-Divisor Conjecture** — group rings of torsion-free groups have no zero divisors.
-81. **Jacobian Conjecture** — polynomial maps with constant nonzero Jacobian are invertible.
+81. **Jacobian Conjecture** — polynomial maps with constant nonzero Jacobian are invertible. → **⚡ DISPROVEN for n > 2 (July 2026)**; the `n = 2` case remains open. See the [featured case study](problems/081-jacobian-conjecture.md).
 82. **Dixmier Conjecture** — endomorphisms of the Weyl algebra are automorphisms.
 83. **Inverse Galois Problem** — is every finite group a Galois group over ℚ?
 84. **Zariski Cancellation Problem** — does Aⁿ ≅ Bⁿ imply A ≅ B (in characteristic 0)?
