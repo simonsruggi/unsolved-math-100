@@ -195,3 +195,7 @@ Be rigorous, cite sources, and separate *proven* from *conjectured*. Good-faith 
 ---
 
 *Curated with care by [Simone Ruggiero](https://simoneruggiero.com?utm_source=unsolved-math-100&utm_medium=readme). Mathematics belongs to everyone — dig in.*
+
+---
+
+unsolved-math-100 is free and open source. If you find it useful, please [⭐️ star the repo](https://github.com/simonsruggi/unsolved-math-100) — and if you'd like to support my open-source work, you can [💛 sponsor me on GitHub](https://github.com/sponsors/simonsruggi) or [☕️ buy me a coffee](https://buymeacoffee.com/simonsruggi). Completely optional, always appreciated. 🙏
